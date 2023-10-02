@@ -1,0 +1,16 @@
+{
+  "controllerPathGlobs": [
+    "./src/domain/**/*"
+  ],
+  "spec": {
+    "outputDirectory": ".",
+    "specVersion": 3,
+    "host": "https://ldv3cmd9dc.execute-api.us-east-1.amazonaws.com/dev/api/v1",
+    "schemes": ["http"]
+  },
+  "routes": {
+    "basePath": "/api/v1",
+    "entryFile": "./src/app.ts",
+    "routesDir": "./src"
+  }
+}

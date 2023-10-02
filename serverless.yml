@@ -4,6 +4,10 @@ service: organization
 
 frameworkVersion: '2'
 
+plugins: # List of plugins of use on application
+  - serverless-offline # Get your serverless configuration and run the server local
+  - serverless-plugin-typescript-express # Help us with configuration typescript on serverless
+
 provider:
   name: aws
   runtime: nodejs12.x
@@ -11,7 +15,7 @@ provider:
 
 functions:
   api:
-    handler: handler.handler
+    handler: src/server.handler
     events:
       - http:
           path: /
